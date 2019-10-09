@@ -1,2 +1,2 @@
-# excellent-spring-boot-pool-tutorial
+# excellent-spring-boot-pools-tutorial
 best practice of spring boot, using crud as example.
