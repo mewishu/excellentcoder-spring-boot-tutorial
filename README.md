@@ -1,4 +1,4 @@
-# excellent-spring-boot-pools-tutorial
+# excellent-spring-boot-tutorial
 best practice of spring boot, using crud as example.
 
 1. Open http://start.spring.io
