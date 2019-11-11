@@ -1,0 +1,17 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:mybatis="http://mybatis.org/schema/mybatis-spring"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://mybatis.org/schema/mybatis-spring http://mybatis.org/schema/mybatis-spring.xsd">
+
+    <!-- Mppper扫描路径，用来注册到spring框架，There are three different ways to do it:
+        Using the <mybatis:scan/> element.
+        Using the annotation @MapperScan
+        Using a classic Spring xml file and registering the MapperScannerConfigurer
+
+        详见: https://mybatis.org/spring/mappers.html
+     -->
+    <mybatis:scan base-package="org.excellentcoder.tutorial.common.dal.mapper" />
+
+
+</beans>
