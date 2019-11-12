@@ -83,6 +83,34 @@ npm install && npm start
 The front-end server will start on port `3000`.
 
 
+
+# Live Demo
+
+1. 首页
+
+   ![image](https://github.com/mewishu/excellentcoder-spring-boot-tutorial/raw/master/live_demo/main_page.png)
+
+2. 用户登陆
+
+   ![image](https://github.com/mewishu/excellentcoder-spring-boot-tutorial/raw/master/live_demo/user_login.png)
+
+3. 用户注册
+
+   ![image](https://github.com/mewishu/excellentcoder-spring-boot-tutorial/raw/master/live_demo/user_signup.png)
+
+4. 创建投票
+
+   ![image](https://github.com/mewishu/excellentcoder-spring-boot-tutorial/raw/master/live_demo/create_poll.png)
+
+5. 我的polls
+
+   ![image](https://github.com/mewishu/excellentcoder-spring-boot-tutorial/raw/master/live_demo/profile_polls.png)
+
+6. 我的votes
+
+   ![image](https://github.com/mewishu/excellentcoder-spring-boot-tutorial/raw/master/live_demo/profile_votes.png)
+
 # 参考内容
+
 - https://www.javaguides.net/2018/10/free-open-source-projects-using-spring-boot.html
   主要是其中的Plling App部分。
