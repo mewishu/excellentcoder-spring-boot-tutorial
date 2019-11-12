@@ -2,11 +2,38 @@
 best practice of spring boot, using crud as example.
 
 # 服务端(polling-app-server)
-1. 使用 [Spring Initialzr](https://start.spring.io/) 工具
-2. 运行 TutorialApplication
+## 工程创建
+
+参见[Spring Initialzr](https://start.spring.io/) 
+
+## 数据库及数据初始化
+
+- 创建MySQL数据库: polling_app
+- 打开 app/bootstrap/src/main/resources/application.properties，并设置spring.datasource.username` 和 `spring.datasource.password的属性值
+- 按照 app/common/dal/src/main/resources/db/migration 中的内容分别建立对应的表，并初始化对应的数据。
+
+## 运行
+
+1. 使用IDE，如intellij idea，运行 TutorialApplication；
+
+2. 在command line中执行: 
+
+   ```bash
+   mvn clean install
+   
+   cd app/bootstrap
+   mvn spring-boot:run
+   
+   直到发现: 
+   2019-11-12 16:54:56.254  INFO 61521 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 5000 (http) with context path 
+   ```
+
+   也可使用Maven Wrapper: https://www.baeldung.com/maven-wrapper
 
 # 前端(polling-app-client)
-## 使用[create-react-app](https://github.com/facebook/create-react-app)来进行: 
+## 工程创建
+
+### 使用[create-react-app](https://github.com/facebook/create-react-app)来进行
 
 ```bash
 npx create-react-app my-app
@@ -16,9 +43,9 @@ npm start
 
 然后，打开 http://localhost:3000/ 即可看到应用。
 
-## [React Router](https://github.com/ReactTraining/react-router) 组件
+### [React Router](https://github.com/ReactTraining/react-router) 组件
 
-### react-router、react-router-dom、react-router-native区别
+#### react-router、react-router-dom、react-router-native区别
 
 `react-router`: 实现了路由的核心功能
 
@@ -33,9 +60,27 @@ cd polling-app-client
 npm install react-router-dom --save
 ```
 
-## [And Design](https://ant.design/docs/react/introduce-cn)
+### [And Design](https://ant.design/docs/react/introduce-cn)
 
 [在 create-react-app 中使用and](https://ant.design/docs/react/use-with-create-react-app-cn): 包括and、react-app-rewired customize-cra、babel-plugin-import等插件等。
+
+
+
+## 运行
+
+First go to the `polling-app-client` folder -
+
+```
+cd polling-app-client
+```
+
+Then type the following command to install the dependencies and start the application -
+
+```
+npm install && npm start
+```
+
+The front-end server will start on port `3000`.
 
 
 # 参考内容
