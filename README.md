@@ -2,11 +2,8 @@
 best practice of spring boot, using crud as example.
 
 # 服务端(polling-app-server)
-## 使用 [Spring Initialzr](https://start.spring.io/) 工具
-
-
-
-## 运行 TutorialApplication
+1. 使用 [Spring Initialzr](https://start.spring.io/) 工具
+2. 运行 TutorialApplication
 
 # 前端(polling-app-client)
 ## 使用[create-react-app](https://github.com/facebook/create-react-app)来进行: 
@@ -36,7 +33,7 @@ cd polling-app-client
 npm install react-router-dom --save
 ```
 
-## And Design: https://ant.design/docs/react/introduce-cn
+## [And Design](https://ant.design/docs/react/introduce-cn)
 
 [在 create-react-app 中使用and](https://ant.design/docs/react/use-with-create-react-app-cn): 包括and、react-app-rewired customize-cra、babel-plugin-import等插件等。
 
