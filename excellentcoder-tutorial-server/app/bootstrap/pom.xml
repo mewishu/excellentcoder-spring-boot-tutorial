@@ -32,6 +32,11 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <!-- the target directory in workspace is where the fat jar deploy -->
+                    <outputDirectory>../../target</outputDirectory>
+                    <classifier>executable</classifier>
+                </configuration>
                 <executions>
                     <execution>
                         <goals>
