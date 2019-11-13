@@ -1,5 +1,5 @@
-# excellent-spring-boot-tutorial
-best practice of spring boot, using crud as example.
+# excellent-spring-boot-multi-module-project
+best practice of multi module spring boot project, using poll as example.
 
 # 服务端(polling-app-server)
 ## 工程创建
