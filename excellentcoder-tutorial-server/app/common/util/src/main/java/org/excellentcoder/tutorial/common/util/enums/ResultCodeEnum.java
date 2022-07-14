@@ -6,6 +6,7 @@ package org.excellentcoder.tutorial.common.util.enums;
 
 import lombok.Getter;
 import org.apache.commons.lang3.StringUtils;
+import org.excellentcoder.tutorial.common.util.ResultCode;
 
 /**
  * 结果码枚举
@@ -13,7 +14,7 @@ import org.apache.commons.lang3.StringUtils;
  * @author xbyan
  * @version $Id: ResultCodeEnum.java, v 0.1 2019-10-11 10:15 PM xbyan Exp $$
  */
-public enum  ResultCodeEnum {
+public enum ResultCodeEnum implements ResultCode {
 
     /** 成功 */
     SUCCESS("SUCCESS", "成功"),

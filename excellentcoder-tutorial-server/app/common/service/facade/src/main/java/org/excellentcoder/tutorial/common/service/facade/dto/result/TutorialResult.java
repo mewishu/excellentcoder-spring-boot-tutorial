@@ -16,10 +16,16 @@ import lombok.ToString;
 @Data
 @ToString(callSuper = true)
 public class TutorialResult<T> extends AbstractTutorialResult {
+    /** 成功 */
+    private static final String SUCCESS      = "SUCCESS";
+
+    /** 系统异常 */
+    private static final String SYSTEM_ERROR = "SYSTEM_ERROR";
+
     /**
      * 返回结果
      */
-    private T result;
+    private T                   result;
 
     /**
      * 根据返回成功与否构造响应结果
@@ -60,4 +66,73 @@ public class TutorialResult<T> extends AbstractTutorialResult {
         this.setSuccess(isSuccess);
         this.setResult(t);
     }
+
+    /**
+     * 成功返回值
+     * 
+     * @param data
+     * @param <T>
+     * @return
+     */
+    public static <T> TutorialResult<T> success(T data) {
+        TutorialResult<T> result = new TutorialResult<T>();
+        result.setSuccess(true);
+        result.setResult(data);
+        result.setResultCode(SUCCESS);
+        return result;
+    }
+
+    /**
+     * 成功返回值
+     * 
+     * @param resultCode
+     * @param message
+     * @param data
+     * @param <T>
+     * @return
+     */
+    public static <T> TutorialResult<T> success(String resultCode, String message, T data) {
+        TutorialResult<T> result = new TutorialResult<T>();
+        result.setSuccess(true);
+        result.setResult(data);
+        result.setResultCode(resultCode);
+        result.setResultMsg(message);
+        return result;
+    }
+
+    /**
+     * 失败返回结果
+     * 
+     * @return
+     */
+    public static TutorialResult<String> fail() {
+        return fail(SYSTEM_ERROR);
+    }
+
+    public static TutorialResult<String> fail(String code) {
+        return fail(code, null);
+    }
+
+    public static <T> TutorialResult<T> fail(String code, T data) {
+        return fail(code, "操作失败", data);
+    }
+
+    /**
+     * 失败返回结果
+     * 
+     * @param code
+     * @param message
+     * @param data
+     * @param <T>
+     * @return
+     */
+    public static <T> TutorialResult<T> fail(String code, String message, T data) {
+        TutorialResult<T> result = new TutorialResult<T>();
+        result.setSuccess(false);
+        result.setResult(data);
+        result.setResultCode(code);
+        result.setResultMsg(message);
+        return result;
+    }
+
 }
