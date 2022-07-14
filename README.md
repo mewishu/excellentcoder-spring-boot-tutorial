@@ -1,5 +1,5 @@
 # excellent-spring-boot-multi-module-project
-best practice of multi module spring boot project, using poll as example.
+best practice of multi module spring boot, Spring Security, JWT, React, and Ant Design, using poll as example.
 
 # 服务端(polling-app-server)
 ## 工程创建
