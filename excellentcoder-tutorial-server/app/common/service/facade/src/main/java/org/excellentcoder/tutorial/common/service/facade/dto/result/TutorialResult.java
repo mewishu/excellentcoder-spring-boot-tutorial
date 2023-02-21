@@ -28,6 +28,21 @@ public class TutorialResult<T> extends AbstractTutorialResult {
     private T                   result;
 
     /**
+     * 根据返回成功与否，及返回消息构造响应结果
+     *
+     * @param errorCode    错误码
+     * @param errorMessage 返回消息
+     * @param data         返回的数据
+     * @param success      是否成功
+     */
+    public TutorialResult(String errorCode, String errorMessage, T data, boolean success) {
+        this.setResultCode(errorCode);
+        this.setResultMsg(errorMessage);
+        this.setResult(data);
+        this.setSuccess(success);
+    }
+
+    /**
      * 根据返回成功与否构造响应结果
      */
     public TutorialResult() {
@@ -68,6 +83,19 @@ public class TutorialResult<T> extends AbstractTutorialResult {
     }
 
     /**
+     * 创建 Result 对象
+     *
+     * @param errorCode    错误码
+     * @param errorMessage 提示信息
+     * @param data    返回的数据
+     * @param success 是否成功
+     */
+    public static <T> TutorialResult<T> of(String errorCode, String errorMessage, T data,
+                                           boolean success) {
+        return new TutorialResult<>(errorCode, errorMessage, data, success);
+    }
+
+    /**
      * 成功返回值
      * 
      * @param data
@@ -75,11 +103,7 @@ public class TutorialResult<T> extends AbstractTutorialResult {
      * @return
      */
     public static <T> TutorialResult<T> success(T data) {
-        TutorialResult<T> result = new TutorialResult<T>();
-        result.setSuccess(true);
-        result.setResult(data);
-        result.setResultCode(SUCCESS);
-        return result;
+        return of(SUCCESS, "成功", data, true);
     }
 
     /**
@@ -102,24 +126,7 @@ public class TutorialResult<T> extends AbstractTutorialResult {
 
     /**
      * 失败返回结果
-     * 
-     * @return
-     */
-    public static TutorialResult<String> fail() {
-        return fail(SYSTEM_ERROR);
-    }
-
-    public static TutorialResult<String> fail(String code) {
-        return fail(code, null);
-    }
-
-    public static <T> TutorialResult<T> fail(String code, T data) {
-        return fail(code, "操作失败", data);
-    }
-
-    /**
-     * 失败返回结果
-     * 
+     *
      * @param code
      * @param message
      * @param data
@@ -135,4 +142,20 @@ public class TutorialResult<T> extends AbstractTutorialResult {
         return result;
     }
 
+    /**
+     * 失败返回结果
+     * 
+     * @return
+     */
+    public static TutorialResult<String> fail() {
+        return fail(SYSTEM_ERROR, "操作失败");
+    }
+
+    public static TutorialResult<String> fail(String code, String message) {
+        return fail(code, message);
+    }
+
+    public static <T> TutorialResult<T> fail(String code, T data) {
+        return fail(code, "操作失败", data);
+    }
 }

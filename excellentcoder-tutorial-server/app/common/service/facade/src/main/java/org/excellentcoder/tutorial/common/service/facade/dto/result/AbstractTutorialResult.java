@@ -30,10 +30,4 @@ public abstract class AbstractTutorialResult {
      * 结果描述
      */
     protected String  resultMsg;
-
-    /**
-     * 外围系统错误码
-     */
-    protected String  outResultCode;
-
 }
