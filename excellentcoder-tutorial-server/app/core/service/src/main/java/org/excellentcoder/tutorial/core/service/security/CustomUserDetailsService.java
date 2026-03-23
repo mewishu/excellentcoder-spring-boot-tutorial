@@ -2,12 +2,12 @@
  * Alipay.com Inc.
  * Copyright (c) 2004-2019 All Rights Reserved.
  */
-package org.excellentcoder.tutorial.core.service.security;
+package org.gtg.tutorial.core.service.security;
 
-import org.excellentcoder.tutorial.common.util.exception.ResourceNotFoundException;
-import org.excellentcoder.tutorial.core.manager.UserManager;
-import org.excellentcoder.tutorial.core.model.poll.UserBO;
-import org.excellentcoder.tutorial.core.model.security.UserPrincipal;
+import org.gtg.tutorial.common.util.exception.ResourceNotFoundException;
+import org.gtg.tutorial.core.manager.UserManager;
+import org.gtg.tutorial.core.model.poll.UserBO;
+import org.gtg.tutorial.core.model.security.UserPrincipal;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;

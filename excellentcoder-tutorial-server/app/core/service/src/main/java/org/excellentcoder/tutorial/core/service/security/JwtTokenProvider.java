@@ -2,7 +2,7 @@
  * Alipay.com Inc.
  * Copyright (c) 2004-2019 All Rights Reserved.
  */
-package org.excellentcoder.tutorial.core.service.security;
+package org.gtg.tutorial.core.service.security;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.ExpiredJwtException;
@@ -11,8 +11,8 @@ import io.jsonwebtoken.MalformedJwtException;
 import io.jsonwebtoken.SignatureAlgorithm;
 import io.jsonwebtoken.SignatureException;
 import io.jsonwebtoken.UnsupportedJwtException;
-import org.excellentcoder.tutorial.common.util.logger.LoggerUtil;
-import org.excellentcoder.tutorial.core.model.security.UserPrincipal;
+import org.gtg.tutorial.common.util.logger.LoggerUtil;
+import org.gtg.tutorial.core.model.security.UserPrincipal;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;

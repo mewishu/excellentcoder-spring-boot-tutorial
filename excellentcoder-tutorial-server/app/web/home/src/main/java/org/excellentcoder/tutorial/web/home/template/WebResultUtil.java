@@ -2,10 +2,10 @@
  * Alipay.com Inc.
  * Copyright (c) 2004-2019 All Rights Reserved.
  */
-package org.excellentcoder.tutorial.web.home.template;
+package org.gtg.tutorial.web.home.template;
 
-import org.excellentcoder.tutorial.common.util.enums.ResultCodeEnum;
-import org.excellentcoder.tutorial.web.home.result.WebResult;
+import org.gtg.tutorial.common.util.enums.ResultCodeEnum;
+import org.gtg.tutorial.web.home.result.WebResult;
 
 /**
  * result工具类

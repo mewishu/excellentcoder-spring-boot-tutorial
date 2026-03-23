@@ -2,14 +2,14 @@
  * Alipay.com Inc.
  * Copyright (c) 2004-2019 All Rights Reserved.
  */
-package org.excellentcoder.tutorial.core.manager.impl;
+package org.gtg.tutorial.core.manager.impl;
 
-import org.excellentcoder.tutorial.common.dal.dataobject.ChoiceDO;
-import org.excellentcoder.tutorial.common.dal.dataobject.ChoiceDOExample;
-import org.excellentcoder.tutorial.common.dal.mapper.auto.ChoiceDOMapper;
-import org.excellentcoder.tutorial.core.manager.ChoiceManager;
-import org.excellentcoder.tutorial.core.manager.convertor.ChoiceConvertor;
-import org.excellentcoder.tutorial.core.model.poll.ChoiceBO;
+import org.gtg.tutorial.common.dal.dataobject.ChoiceDO;
+import org.gtg.tutorial.common.dal.dataobject.ChoiceDOExample;
+import org.gtg.tutorial.common.dal.mapper.auto.ChoiceDOMapper;
+import org.gtg.tutorial.core.manager.ChoiceManager;
+import org.gtg.tutorial.core.manager.convertor.ChoiceConvertor;
+import org.gtg.tutorial.core.model.poll.ChoiceBO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -29,7 +29,7 @@ public class ChoiceManagerImpl implements ChoiceManager {
     private ChoiceDOMapper choiceDOMapper;
 
     /**
-     * @see org.excellentcoder.tutorial.core.manager.ChoiceManager#queryChoiceByPollId(Long)
+     * @see org.gtg.tutorial.core.manager.ChoiceManager#queryChoiceByPollId(Long)
      */
     @Override
     public List<ChoiceBO> queryChoiceByPollId(Long pollId) {

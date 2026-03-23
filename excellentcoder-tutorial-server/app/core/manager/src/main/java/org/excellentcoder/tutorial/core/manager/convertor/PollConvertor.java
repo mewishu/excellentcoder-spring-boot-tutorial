@@ -2,12 +2,12 @@
  * Alipay.com Inc.
  * Copyright (c) 2004-2019 All Rights Reserved.
  */
-package org.excellentcoder.tutorial.core.manager.convertor;
+package org.gtg.tutorial.core.manager.convertor;
 
-import org.excellentcoder.tutorial.common.dal.dataobject.PollDO;
-import org.excellentcoder.tutorial.common.dal.dataobject.PollDOExample;
-import org.excellentcoder.tutorial.common.service.facade.dto.request.PollQueryDTO;
-import org.excellentcoder.tutorial.core.model.poll.PollBO;
+import org.gtg.tutorial.common.dal.dataobject.PollDO;
+import org.gtg.tutorial.common.dal.dataobject.PollDOExample;
+import org.gtg.tutorial.common.service.facade.dto.request.PollQueryDTO;
+import org.gtg.tutorial.core.model.poll.PollBO;
 
 import java.util.ArrayList;
 import java.util.Date;

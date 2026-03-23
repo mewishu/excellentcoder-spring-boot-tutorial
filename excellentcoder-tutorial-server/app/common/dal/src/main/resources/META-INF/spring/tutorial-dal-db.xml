@@ -11,7 +11,7 @@
 
         详见: https://mybatis.org/spring/mappers.html
      -->
-    <mybatis:scan base-package="org.excellentcoder.tutorial.common.dal.mapper" />
+    <mybatis:scan base-package="org.gtg.tutorial.common.dal.mapper" />
 
 
 </beans>

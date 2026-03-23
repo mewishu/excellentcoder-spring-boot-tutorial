@@ -2,17 +2,17 @@
  * Alipay.com Inc.
  * Copyright (c) 2004-2019 All Rights Reserved.
  */
-package org.excellentcoder.tutorial.web.polls.convertor;
+package org.gtg.tutorial.web.polls.convertor;
 
-import org.excellentcoder.tutorial.common.util.DateUtil;
-import org.excellentcoder.tutorial.core.model.poll.ChoiceBO;
-import org.excellentcoder.tutorial.core.model.poll.PollBO;
-import org.excellentcoder.tutorial.core.model.poll.PollVotedBO;
-import org.excellentcoder.tutorial.core.model.poll.UserBO;
-import org.excellentcoder.tutorial.web.polls.payload.ChoiceResponseVO;
-import org.excellentcoder.tutorial.web.polls.payload.PollRequestVO;
-import org.excellentcoder.tutorial.web.polls.payload.PollResponseVO;
-import org.excellentcoder.tutorial.web.polls.payload.UserSummary;
+import org.gtg.tutorial.common.util.DateUtil;
+import org.gtg.tutorial.core.model.poll.ChoiceBO;
+import org.gtg.tutorial.core.model.poll.PollBO;
+import org.gtg.tutorial.core.model.poll.PollVotedBO;
+import org.gtg.tutorial.core.model.poll.UserBO;
+import org.gtg.tutorial.web.polls.payload.ChoiceResponseVO;
+import org.gtg.tutorial.web.polls.payload.PollRequestVO;
+import org.gtg.tutorial.web.polls.payload.PollResponseVO;
+import org.gtg.tutorial.web.polls.payload.UserSummary;
 
 import java.time.Instant;
 import java.time.Duration;

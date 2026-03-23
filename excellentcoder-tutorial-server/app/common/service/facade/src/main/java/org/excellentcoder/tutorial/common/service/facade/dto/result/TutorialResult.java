@@ -2,7 +2,7 @@
  * Alipay.com Inc.
  * Copyright (c) 2004-2019 All Rights Reserved.
  */
-package org.excellentcoder.tutorial.common.service.facade.dto.result;
+package org.gtg.tutorial.common.service.facade.dto.result;
 
 import lombok.Data;
 import lombok.ToString;

@@ -2,25 +2,25 @@
  * Alipay.com Inc.
  * Copyright (c) 2004-2019 All Rights Reserved.
  */
-package org.excellentcoder.tutorial.web.polls.controller;
+package org.gtg.tutorial.web.polls.controller;
 
-import org.excellentcoder.tutorial.biz.poll.service.PollService;
-import org.excellentcoder.tutorial.common.service.facade.dto.request.PollQueryDTO;
-import org.excellentcoder.tutorial.common.util.constants.PollConstants;
-import org.excellentcoder.tutorial.common.util.enums.ResultCodeEnum;
-import org.excellentcoder.tutorial.common.util.exception.ApiException;
-import org.excellentcoder.tutorial.core.model.poll.PollVotedBO;
-import org.excellentcoder.tutorial.core.model.security.CurrentUser;
-import org.excellentcoder.tutorial.core.model.security.UserPrincipal;
-import org.excellentcoder.tutorial.core.service.template.AbstractHandleCallBack;
-import org.excellentcoder.tutorial.web.home.result.WebPagedResult;
-import org.excellentcoder.tutorial.web.home.result.WebResult;
-import org.excellentcoder.tutorial.web.home.template.WebOperateTemplate;
-import org.excellentcoder.tutorial.web.home.template.WebResultUtil;
-import org.excellentcoder.tutorial.web.polls.convertor.PollVOConvertor;
-import org.excellentcoder.tutorial.web.polls.payload.PollRequestVO;
-import org.excellentcoder.tutorial.web.polls.payload.PollResponseVO;
-import org.excellentcoder.tutorial.web.polls.payload.VoteRequestVO;
+import org.gtg.tutorial.biz.poll.service.PollService;
+import org.gtg.tutorial.common.service.facade.dto.request.PollQueryDTO;
+import org.gtg.tutorial.common.util.constants.PollConstants;
+import org.gtg.tutorial.common.util.enums.ResultCodeEnum;
+import org.gtg.tutorial.common.util.exception.ApiException;
+import org.gtg.tutorial.core.model.poll.PollVotedBO;
+import org.gtg.tutorial.core.model.security.CurrentUser;
+import org.gtg.tutorial.core.model.security.UserPrincipal;
+import org.gtg.tutorial.core.service.template.AbstractHandleCallBack;
+import org.gtg.tutorial.web.home.result.WebPagedResult;
+import org.gtg.tutorial.web.home.result.WebResult;
+import org.gtg.tutorial.web.home.template.WebOperateTemplate;
+import org.gtg.tutorial.web.home.template.WebResultUtil;
+import org.gtg.tutorial.web.polls.convertor.PollVOConvertor;
+import org.gtg.tutorial.web.polls.payload.PollRequestVO;
+import org.gtg.tutorial.web.polls.payload.PollResponseVO;
+import org.gtg.tutorial.web.polls.payload.VoteRequestVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -76,7 +76,7 @@ public class PollController {
 
         WebOperateTemplate.operate(logger, "查询投票请求处理", result, new AbstractHandleCallBack() {
             /**
-             * @see org.excellentcoder.tutorial.core.service.template.AbstractHandleCallBack#checkAndFillParams()
+             * @see org.gtg.tutorial.core.service.template.AbstractHandleCallBack#checkAndFillParams()
              */
             @Override
             public void checkAndFillParams() {
@@ -91,7 +91,7 @@ public class PollController {
             }
 
             /**
-             * @see org.excellentcoder.tutorial.core.service.template.AbstractHandleCallBack#process()
+             * @see org.gtg.tutorial.core.service.template.AbstractHandleCallBack#process()
              */
             @Override
             public void process() {
@@ -128,7 +128,7 @@ public class PollController {
 
         WebOperateTemplate.operate(logger, "创建投票请求处理", result, new AbstractHandleCallBack() {
             /**
-             * @see org.excellentcoder.tutorial.core.service.template.AbstractHandleCallBackWithResult#process()
+             * @see org.gtg.tutorial.core.service.template.AbstractHandleCallBackWithResult#process()
              */
             @Override
             public void process() {

@@ -1,11 +1,11 @@
-package org.excellentcoder.tutorial.common.dal.mapper.manual;
+package org.gtg.tutorial.common.dal.mapper.manual;
 
 import java.util.List;
 
 import org.apache.ibatis.annotations.Mapper;
-import org.excellentcoder.tutorial.common.dal.dataobject.RoleDO;
-import org.excellentcoder.tutorial.common.dal.dataobject.RoleDOExample;
-import org.excellentcoder.tutorial.common.dal.dataobject.UserRolesLinkDO;
+import org.gtg.tutorial.common.dal.dataobject.RoleDO;
+import org.gtg.tutorial.common.dal.dataobject.RoleDOExample;
+import org.gtg.tutorial.common.dal.dataobject.UserRolesLinkDO;
 
 @Mapper
 public interface ManualRoleDOMapper {

@@ -2,15 +2,15 @@
  * Alipay.com Inc.
  * Copyright (c) 2004-2019 All Rights Reserved.
  */
-package org.excellentcoder.tutorial.core.manager.impl;
+package org.gtg.tutorial.core.manager.impl;
 
-import org.excellentcoder.tutorial.common.dal.dataobject.RoleDO;
-import org.excellentcoder.tutorial.common.dal.dataobject.RoleDOExample;
-import org.excellentcoder.tutorial.common.dal.mapper.auto.RoleDOMapper;
-import org.excellentcoder.tutorial.core.manager.RoleManager;
-import org.excellentcoder.tutorial.core.manager.convertor.RoleConvertor;
-import org.excellentcoder.tutorial.core.model.enums.RoleName;
-import org.excellentcoder.tutorial.core.model.poll.RoleBO;
+import org.gtg.tutorial.common.dal.dataobject.RoleDO;
+import org.gtg.tutorial.common.dal.dataobject.RoleDOExample;
+import org.gtg.tutorial.common.dal.mapper.auto.RoleDOMapper;
+import org.gtg.tutorial.core.manager.RoleManager;
+import org.gtg.tutorial.core.manager.convertor.RoleConvertor;
+import org.gtg.tutorial.core.model.enums.RoleName;
+import org.gtg.tutorial.core.model.poll.RoleBO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -30,7 +30,7 @@ public class RoleManagerImpl implements RoleManager {
     private RoleDOMapper roleDOMapper;
 
     /**
-     * @see org.excellentcoder.tutorial.core.manager.RoleManager#queryByName(RoleName)
+     * @see org.gtg.tutorial.core.manager.RoleManager#queryByName(RoleName)
      */
     @Override
     public Optional<RoleBO> queryByName(RoleName name) {

@@ -2,10 +2,10 @@
  * Alipay.com Inc.
  * Copyright (c) 2004-2022 All Rights Reserved.
  */
-package org.excellentcoder.tutorial.common.util.exception;
+package org.gtg.tutorial.common.util.exception;
 
 import org.apache.commons.lang3.StringUtils;
-import org.excellentcoder.tutorial.common.util.ResultCode;
+import org.gtg.tutorial.common.util.ResultCode;
 import org.springframework.util.CollectionUtils;
 
 import java.util.Collection;

@@ -2,9 +2,9 @@
  * Alipay.com Inc.
  * Copyright (c) 2004-2019 All Rights Reserved.
  */
-package org.excellentcoder.tutorial.web.polls.config;
+package org.gtg.tutorial.web.polls.config;
 
-import org.excellentcoder.tutorial.core.model.security.UserPrincipal;
+import org.gtg.tutorial.core.model.security.UserPrincipal;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.domain.AuditorAware;

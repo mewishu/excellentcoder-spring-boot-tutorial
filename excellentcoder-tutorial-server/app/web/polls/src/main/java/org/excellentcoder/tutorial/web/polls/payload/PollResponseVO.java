@@ -2,7 +2,7 @@
  * Alipay.com Inc.
  * Copyright (c) 2004-2019 All Rights Reserved.
  */
-package org.excellentcoder.tutorial.web.polls.payload;
+package org.gtg.tutorial.web.polls.payload;
 
 import lombok.Getter;
 import lombok.Setter;

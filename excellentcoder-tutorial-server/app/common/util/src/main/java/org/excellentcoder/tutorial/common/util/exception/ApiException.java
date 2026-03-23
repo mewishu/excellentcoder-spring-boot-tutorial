@@ -2,11 +2,11 @@
  * Alipay.com Inc.
  * Copyright (c) 2004-2019 All Rights Reserved.
  */
-package org.excellentcoder.tutorial.common.util.exception;
+package org.gtg.tutorial.common.util.exception;
 
 import lombok.Getter;
 import lombok.Setter;
-import org.excellentcoder.tutorial.common.util.ResultCode;
+import org.gtg.tutorial.common.util.ResultCode;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;
 

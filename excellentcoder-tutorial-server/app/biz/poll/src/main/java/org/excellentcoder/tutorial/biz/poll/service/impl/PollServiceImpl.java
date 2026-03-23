@@ -2,24 +2,24 @@
  * Alipay.com Inc.
  * Copyright (c) 2004-2019 All Rights Reserved.
  */
-package org.excellentcoder.tutorial.biz.poll.service.impl;
+package org.gtg.tutorial.biz.poll.service.impl;
 
-import org.excellentcoder.tutorial.biz.poll.service.PollService;
-import org.excellentcoder.tutorial.common.dal.dataobject.ChoiceVoteCount;
-import org.excellentcoder.tutorial.common.service.facade.dto.request.PollQueryDTO;
-import org.excellentcoder.tutorial.common.util.DateUtil;
-import org.excellentcoder.tutorial.common.util.exception.BadRequestException;
-import org.excellentcoder.tutorial.common.util.exception.ResourceNotFoundException;
-import org.excellentcoder.tutorial.common.util.logger.LoggerUtil;
-import org.excellentcoder.tutorial.core.manager.PollManager;
-import org.excellentcoder.tutorial.core.manager.UserManager;
-import org.excellentcoder.tutorial.core.manager.VoteManager;
-import org.excellentcoder.tutorial.core.model.poll.ChoiceBO;
-import org.excellentcoder.tutorial.core.model.poll.PollBO;
-import org.excellentcoder.tutorial.core.model.poll.PollVotedBO;
-import org.excellentcoder.tutorial.core.model.poll.UserBO;
-import org.excellentcoder.tutorial.core.model.poll.VoteBO;
-import org.excellentcoder.tutorial.core.model.security.UserPrincipal;
+import org.gtg.tutorial.biz.poll.service.PollService;
+import org.gtg.tutorial.common.dal.dataobject.ChoiceVoteCount;
+import org.gtg.tutorial.common.service.facade.dto.request.PollQueryDTO;
+import org.gtg.tutorial.common.util.DateUtil;
+import org.gtg.tutorial.common.util.exception.BadRequestException;
+import org.gtg.tutorial.common.util.exception.ResourceNotFoundException;
+import org.gtg.tutorial.common.util.logger.LoggerUtil;
+import org.gtg.tutorial.core.manager.PollManager;
+import org.gtg.tutorial.core.manager.UserManager;
+import org.gtg.tutorial.core.manager.VoteManager;
+import org.gtg.tutorial.core.model.poll.ChoiceBO;
+import org.gtg.tutorial.core.model.poll.PollBO;
+import org.gtg.tutorial.core.model.poll.PollVotedBO;
+import org.gtg.tutorial.core.model.poll.UserBO;
+import org.gtg.tutorial.core.model.poll.VoteBO;
+import org.gtg.tutorial.core.model.security.UserPrincipal;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -61,7 +61,7 @@ public class PollServiceImpl implements PollService {
     private VoteManager         voteManager;
 
     /**
-     * @see org.excellentcoder.tutorial.biz.poll.service.PollService#createPoll(PollBO)
+     * @see org.gtg.tutorial.biz.poll.service.PollService#createPoll(PollBO)
      */
     @Override
     public Long createPoll(PollBO pollBO) {
@@ -69,7 +69,7 @@ public class PollServiceImpl implements PollService {
     }
 
     /**
-     * @see org.excellentcoder.tutorial.biz.poll.service.PollService#queryDyn(UserPrincipal, PollQueryDTO, Pageable)
+     * @see org.gtg.tutorial.biz.poll.service.PollService#queryDyn(UserPrincipal, PollQueryDTO, Pageable)
      */
     @Override
     public Page<PollVotedBO> queryDyn(UserPrincipal currentUser, PollQueryDTO pollQuery,
@@ -89,7 +89,7 @@ public class PollServiceImpl implements PollService {
     }
 
     /**
-     * @see org.excellentcoder.tutorial.biz.poll.service.PollService#getPollsCreatedBy(String, UserPrincipal, int, int)
+     * @see org.gtg.tutorial.biz.poll.service.PollService#getPollsCreatedBy(String, UserPrincipal, int, int)
      */
     @Override
     public Page<PollVotedBO> getPollsCreatedBy(String username, UserPrincipal currentUser, int page,
@@ -115,7 +115,7 @@ public class PollServiceImpl implements PollService {
     }
 
     /**
-     * @see org.excellentcoder.tutorial.biz.poll.service.PollService#getPollsVotedBy(String, UserPrincipal, int, int)
+     * @see org.gtg.tutorial.biz.poll.service.PollService#getPollsVotedBy(String, UserPrincipal, int, int)
      */
     @Override
     public Page<PollVotedBO> getPollsVotedBy(String username, UserPrincipal currentUser, int page,
@@ -203,7 +203,7 @@ public class PollServiceImpl implements PollService {
     }
 
     /**
-     * @see org.excellentcoder.tutorial.biz.poll.service.PollService#getPollById(Long, UserPrincipal)
+     * @see org.gtg.tutorial.biz.poll.service.PollService#getPollById(Long, UserPrincipal)
      */
     @Override
     public PollVotedBO getPollById(Long pollId, UserPrincipal currentUser) {
@@ -231,7 +231,7 @@ public class PollServiceImpl implements PollService {
     }
 
     /**
-     * @see org.excellentcoder.tutorial.biz.poll.service.PollService#castVoteAndGetUpdatedPoll(Long, Long, UserPrincipal)
+     * @see org.gtg.tutorial.biz.poll.service.PollService#castVoteAndGetUpdatedPoll(Long, Long, UserPrincipal)
      */
     @Override
     public PollVotedBO castVoteAndGetUpdatedPoll(Long pollId, Long choiceId,

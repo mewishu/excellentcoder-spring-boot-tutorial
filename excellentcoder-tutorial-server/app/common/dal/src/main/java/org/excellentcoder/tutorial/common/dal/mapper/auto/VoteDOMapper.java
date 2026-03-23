@@ -1,10 +1,10 @@
-package org.excellentcoder.tutorial.common.dal.mapper.auto;
+package org.gtg.tutorial.common.dal.mapper.auto;
 
 import java.util.List;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.session.RowBounds;
-import org.excellentcoder.tutorial.common.dal.dataobject.VoteDO;
-import org.excellentcoder.tutorial.common.dal.dataobject.VoteDOExample;
+import org.gtg.tutorial.common.dal.dataobject.VoteDO;
+import org.gtg.tutorial.common.dal.dataobject.VoteDOExample;
 
 @Mapper
 public interface VoteDOMapper {

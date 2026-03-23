@@ -2,16 +2,16 @@
  * Alipay.com Inc.
  * Copyright (c) 2004-2019 All Rights Reserved.
  */
-package org.excellentcoder.tutorial.core.manager.impl;
+package org.gtg.tutorial.core.manager.impl;
 
-import org.excellentcoder.tutorial.common.dal.dataobject.ChoiceVoteCount;
-import org.excellentcoder.tutorial.common.dal.dataobject.VoteDO;
-import org.excellentcoder.tutorial.common.dal.dataobject.VoteDOExample;
-import org.excellentcoder.tutorial.common.dal.mapper.auto.VoteDOMapper;
-import org.excellentcoder.tutorial.common.dal.mapper.manual.ManualVoteDOMapper;
-import org.excellentcoder.tutorial.core.manager.VoteManager;
-import org.excellentcoder.tutorial.core.manager.convertor.VoteConvertor;
-import org.excellentcoder.tutorial.core.model.poll.VoteBO;
+import org.gtg.tutorial.common.dal.dataobject.ChoiceVoteCount;
+import org.gtg.tutorial.common.dal.dataobject.VoteDO;
+import org.gtg.tutorial.common.dal.dataobject.VoteDOExample;
+import org.gtg.tutorial.common.dal.mapper.auto.VoteDOMapper;
+import org.gtg.tutorial.common.dal.mapper.manual.ManualVoteDOMapper;
+import org.gtg.tutorial.core.manager.VoteManager;
+import org.gtg.tutorial.core.manager.convertor.VoteConvertor;
+import org.gtg.tutorial.core.model.poll.VoteBO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
@@ -37,7 +37,7 @@ public class VoteManagerImpl implements VoteManager {
     private ManualVoteDOMapper manualVoteDOMapper;
 
     /**
-     * @see org.excellentcoder.tutorial.core.manager.VoteManager#insert(VoteBO)
+     * @see org.gtg.tutorial.core.manager.VoteManager#insert(VoteBO)
      */
     @Override
     public VoteBO insert(VoteBO voteBO) {
@@ -50,7 +50,7 @@ public class VoteManagerImpl implements VoteManager {
     }
 
     /**
-     * @see org.excellentcoder.tutorial.core.manager.VoteManager#queryByUserId(Long, Pageable)
+     * @see org.gtg.tutorial.core.manager.VoteManager#queryByUserId(Long, Pageable)
      */
     @Override
     public Page<VoteBO> queryByUserId(Long userId, Pageable pageable) {
@@ -63,7 +63,7 @@ public class VoteManagerImpl implements VoteManager {
     }
 
     /**
-     * @see org.excellentcoder.tutorial.core.manager.VoteManager#queryByUserIdAndPollId(Long, Long)
+     * @see org.gtg.tutorial.core.manager.VoteManager#queryByUserIdAndPollId(Long, Long)
      */
     @Override
     public VoteBO queryByUserIdAndPollId(Long userId, Long pollId) {
@@ -72,7 +72,7 @@ public class VoteManagerImpl implements VoteManager {
     }
 
     /**
-     * @see org.excellentcoder.tutorial.core.manager.VoteManager#queryByUserIdAndPollIdIn(Long, List)
+     * @see org.gtg.tutorial.core.manager.VoteManager#queryByUserIdAndPollIdIn(Long, List)
      */
     @Override
     public List<VoteBO> queryByUserIdAndPollIdIn(Long userId, List<Long> pollIds) {
@@ -81,7 +81,7 @@ public class VoteManagerImpl implements VoteManager {
     }
 
     /**
-     * @see org.excellentcoder.tutorial.core.manager.VoteManager#countByUserId(Long)
+     * @see org.gtg.tutorial.core.manager.VoteManager#countByUserId(Long)
      */
     @Override
     public long countByUserId(Long userId) {
@@ -93,7 +93,7 @@ public class VoteManagerImpl implements VoteManager {
     }
 
     /**
-     * @see org.excellentcoder.tutorial.core.manager.VoteManager#countByPollIdGroupByChoiceId(Long)
+     * @see org.gtg.tutorial.core.manager.VoteManager#countByPollIdGroupByChoiceId(Long)
      */
     @Override
     public List<ChoiceVoteCount> countByPollIdGroupByChoiceId(Long pollId) {
@@ -101,7 +101,7 @@ public class VoteManagerImpl implements VoteManager {
     }
 
     /**
-     * @see org.excellentcoder.tutorial.core.manager.VoteManager#countByPollIdInGroupByChoiceId(List)
+     * @see org.gtg.tutorial.core.manager.VoteManager#countByPollIdInGroupByChoiceId(List)
      */
     @Override
     public List<ChoiceVoteCount> countByPollIdInGroupByChoiceId(List<Long> pollIds) {

@@ -2,7 +2,7 @@
  * Alipay.com Inc.
  * Copyright (c) 2004-2019 All Rights Reserved.
  */
-package org.excellentcoder.tutorial.common.util;
+package org.gtg.tutorial.common.util;
 
 import org.apache.commons.lang3.time.DateUtils;
 

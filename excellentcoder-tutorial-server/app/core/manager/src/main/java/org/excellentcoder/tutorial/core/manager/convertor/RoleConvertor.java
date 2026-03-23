@@ -2,11 +2,11 @@
  * Alipay.com Inc.
  * Copyright (c) 2004-2019 All Rights Reserved.
  */
-package org.excellentcoder.tutorial.core.manager.convertor;
+package org.gtg.tutorial.core.manager.convertor;
 
-import org.excellentcoder.tutorial.common.dal.dataobject.RoleDO;
-import org.excellentcoder.tutorial.core.model.enums.RoleName;
-import org.excellentcoder.tutorial.core.model.poll.RoleBO;
+import org.gtg.tutorial.common.dal.dataobject.RoleDO;
+import org.gtg.tutorial.core.model.enums.RoleName;
+import org.gtg.tutorial.core.model.poll.RoleBO;
 
 import java.util.HashSet;
 import java.util.Set;

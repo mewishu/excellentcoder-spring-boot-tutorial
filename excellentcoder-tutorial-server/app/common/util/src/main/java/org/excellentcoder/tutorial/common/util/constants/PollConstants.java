@@ -2,7 +2,7 @@
  * Alipay.com Inc.
  * Copyright (c) 2004-2019 All Rights Reserved.
  */
-package org.excellentcoder.tutorial.common.util.constants;
+package org.gtg.tutorial.common.util.constants;
 
 /**
  * 投票静态变量统一定义

@@ -2,23 +2,23 @@
  * Alipay.com Inc.
  * Copyright (c) 2004-2019 All Rights Reserved.
  */
-package org.excellentcoder.tutorial.web.polls.controller;
+package org.gtg.tutorial.web.polls.controller;
 
-import org.excellentcoder.tutorial.common.util.enums.ResultCodeEnum;
-import org.excellentcoder.tutorial.common.util.exception.ApiException;
-import org.excellentcoder.tutorial.core.manager.RoleManager;
-import org.excellentcoder.tutorial.core.manager.UserManager;
-import org.excellentcoder.tutorial.core.model.enums.RoleName;
-import org.excellentcoder.tutorial.core.model.poll.RoleBO;
-import org.excellentcoder.tutorial.core.model.poll.UserBO;
-import org.excellentcoder.tutorial.core.service.security.JwtTokenProvider;
-import org.excellentcoder.tutorial.core.service.template.AbstractHandleCallBack;
-import org.excellentcoder.tutorial.web.home.result.WebResult;
-import org.excellentcoder.tutorial.web.home.template.WebOperateTemplate;
-import org.excellentcoder.tutorial.web.home.template.WebResultUtil;
-import org.excellentcoder.tutorial.web.polls.payload.JwtAuthenticationResponseVO;
-import org.excellentcoder.tutorial.web.polls.payload.LoginRequestVO;
-import org.excellentcoder.tutorial.web.polls.payload.SignUpRequestVO;
+import org.gtg.tutorial.common.util.enums.ResultCodeEnum;
+import org.gtg.tutorial.common.util.exception.ApiException;
+import org.gtg.tutorial.core.manager.RoleManager;
+import org.gtg.tutorial.core.manager.UserManager;
+import org.gtg.tutorial.core.model.enums.RoleName;
+import org.gtg.tutorial.core.model.poll.RoleBO;
+import org.gtg.tutorial.core.model.poll.UserBO;
+import org.gtg.tutorial.core.service.security.JwtTokenProvider;
+import org.gtg.tutorial.core.service.template.AbstractHandleCallBack;
+import org.gtg.tutorial.web.home.result.WebResult;
+import org.gtg.tutorial.web.home.template.WebOperateTemplate;
+import org.gtg.tutorial.web.home.template.WebResultUtil;
+import org.gtg.tutorial.web.polls.payload.JwtAuthenticationResponseVO;
+import org.gtg.tutorial.web.polls.payload.LoginRequestVO;
+import org.gtg.tutorial.web.polls.payload.SignUpRequestVO;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -107,7 +107,7 @@ public class AuthController {
 
         WebOperateTemplate.operate(logger, "新用户注册", result, new AbstractHandleCallBack() {
             /**
-             * @see org.excellentcoder.tutorial.core.service.template.AbstractHandleCallBack#checkAndFillParams()
+             * @see org.gtg.tutorial.core.service.template.AbstractHandleCallBack#checkAndFillParams()
              */
             @Override
             public void checkAndFillParams() {
@@ -121,7 +121,7 @@ public class AuthController {
             }
 
             /**
-             * @see org.excellentcoder.tutorial.core.service.template.AbstractHandleCallBackWithResult#process()
+             * @see org.gtg.tutorial.core.service.template.AbstractHandleCallBackWithResult#process()
              */
             @Override
             public void process() {

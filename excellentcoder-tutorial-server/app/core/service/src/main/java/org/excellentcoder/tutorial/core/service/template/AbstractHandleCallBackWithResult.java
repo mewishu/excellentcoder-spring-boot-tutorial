@@ -2,7 +2,7 @@
  * Alipay.com Inc.
  * Copyright (c) 2004-2019 All Rights Reserved.
  */
-package org.excellentcoder.tutorial.core.service.template;
+package org.gtg.tutorial.core.service.template;
 
 /**
  * 抽象操作回调接口(带有返回值)
@@ -12,7 +12,7 @@ package org.excellentcoder.tutorial.core.service.template;
  */
 public abstract class AbstractHandleCallBackWithResult<T> implements HandleCallBackWithResult<T> {
     /**
-     * @see org.excellentcoder.tutorial.core.service.template.HandleCallBackWithResult#checkAndFillParams()
+     * @see org.gtg.tutorial.core.service.template.HandleCallBackWithResult#checkAndFillParams()
      */
     @Override
     public void checkAndFillParams() {
@@ -20,7 +20,7 @@ public abstract class AbstractHandleCallBackWithResult<T> implements HandleCallB
     }
 
     /**
-     * @see org.excellentcoder.tutorial.core.service.template.HandleCallBackWithResult#handleFailure()
+     * @see org.gtg.tutorial.core.service.template.HandleCallBackWithResult#handleFailure()
      */
     @Override
     public void handleFailure() {

@@ -2,13 +2,13 @@
  * Alipay.com Inc.
  * Copyright (c) 2004-2019 All Rights Reserved.
  */
-package org.excellentcoder.tutorial.web.home.template;
+package org.gtg.tutorial.web.home.template;
 
-import org.excellentcoder.tutorial.common.service.facade.dto.result.AbstractTutorialResult;
-import org.excellentcoder.tutorial.common.util.enums.ResultCodeEnum;
-import org.excellentcoder.tutorial.common.util.exception.ApiException;
-import org.excellentcoder.tutorial.common.util.logger.LoggerUtil;
-import org.excellentcoder.tutorial.core.service.template.HandleCallBack;
+import org.gtg.tutorial.common.service.facade.dto.result.AbstractTutorialResult;
+import org.gtg.tutorial.common.util.enums.ResultCodeEnum;
+import org.gtg.tutorial.common.util.exception.ApiException;
+import org.gtg.tutorial.common.util.logger.LoggerUtil;
+import org.gtg.tutorial.core.service.template.HandleCallBack;
 
 import org.slf4j.Logger;
 

@@ -2,11 +2,11 @@
  * Alipay.com Inc.
  * Copyright (c) 2004-2019 All Rights Reserved.
  */
-package org.excellentcoder.tutorial.web.polls.security;
+package org.gtg.tutorial.web.polls.security;
 
-import org.excellentcoder.tutorial.common.util.logger.LoggerUtil;
-import org.excellentcoder.tutorial.core.service.security.CustomUserDetailsService;
-import org.excellentcoder.tutorial.core.service.security.JwtTokenProvider;
+import org.gtg.tutorial.common.util.logger.LoggerUtil;
+import org.gtg.tutorial.core.service.security.CustomUserDetailsService;
+import org.gtg.tutorial.core.service.security.JwtTokenProvider;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContextHolder;

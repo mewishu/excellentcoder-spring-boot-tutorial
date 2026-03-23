@@ -2,18 +2,18 @@
  * Alipay.com Inc.
  * Copyright (c) 2004-2019 All Rights Reserved.
  */
-package org.excellentcoder.tutorial.core.manager.impl;
+package org.gtg.tutorial.core.manager.impl;
 
 import org.apache.ibatis.session.RowBounds;
-import org.excellentcoder.tutorial.common.dal.dataobject.PollDO;
-import org.excellentcoder.tutorial.common.dal.dataobject.PollDOExample;
-import org.excellentcoder.tutorial.common.dal.mapper.auto.PollDOMapper;
-import org.excellentcoder.tutorial.common.service.facade.dto.request.PollQueryDTO;
-import org.excellentcoder.tutorial.core.manager.ChoiceManager;
-import org.excellentcoder.tutorial.core.manager.PollManager;
-import org.excellentcoder.tutorial.core.manager.UserManager;
-import org.excellentcoder.tutorial.core.model.poll.PollBO;
-import org.excellentcoder.tutorial.core.manager.convertor.PollConvertor;
+import org.gtg.tutorial.common.dal.dataobject.PollDO;
+import org.gtg.tutorial.common.dal.dataobject.PollDOExample;
+import org.gtg.tutorial.common.dal.mapper.auto.PollDOMapper;
+import org.gtg.tutorial.common.service.facade.dto.request.PollQueryDTO;
+import org.gtg.tutorial.core.manager.ChoiceManager;
+import org.gtg.tutorial.core.manager.PollManager;
+import org.gtg.tutorial.core.manager.UserManager;
+import org.gtg.tutorial.core.model.poll.PollBO;
+import org.gtg.tutorial.core.manager.convertor.PollConvertor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
@@ -45,7 +45,7 @@ public class PollManagerImpl implements PollManager {
     private UserManager   userManager;
 
     /**
-     * @see org.excellentcoder.tutorial.core.manager.PollManager#countByCreatedBy(Long)
+     * @see org.gtg.tutorial.core.manager.PollManager#countByCreatedBy(Long)
      */
     @Override
     public long countByCreatedBy(Long userId) {
@@ -57,7 +57,7 @@ public class PollManagerImpl implements PollManager {
     }
 
     /**
-     * @see org.excellentcoder.tutorial.core.manager.PollManager#insert(PollBO)
+     * @see org.gtg.tutorial.core.manager.PollManager#insert(PollBO)
      */
     @Override
     public Long insert(PollBO pollBO) {
@@ -67,7 +67,7 @@ public class PollManagerImpl implements PollManager {
     }
 
     /**
-     * @see org.excellentcoder.tutorial.core.manager.PollManager#queryById(Long)
+     * @see org.gtg.tutorial.core.manager.PollManager#queryById(Long)
      */
     @Override
     public Optional<PollBO> queryById(Long pollId) {
@@ -76,7 +76,7 @@ public class PollManagerImpl implements PollManager {
     }
 
     /**
-     * @see org.excellentcoder.tutorial.core.manager.PollManager#queryDyn(PollQueryDTO, Pageable)
+     * @see org.gtg.tutorial.core.manager.PollManager#queryDyn(PollQueryDTO, Pageable)
      */
     @Override
     public Page<PollBO> queryDyn(PollQueryDTO query, Pageable pageable) {
@@ -94,7 +94,7 @@ public class PollManagerImpl implements PollManager {
     }
 
     /**
-     * @see org.excellentcoder.tutorial.core.manager.PollManager#queryByIdIn(List)
+     * @see org.gtg.tutorial.core.manager.PollManager#queryByIdIn(List)
      */
     @Override
     public List<PollBO> queryByIdIn(List<Long> pollIds) {
@@ -129,7 +129,7 @@ public class PollManagerImpl implements PollManager {
     }
 
     /**
-     * @see org.excellentcoder.tutorial.core.manager.PollManager#queryByCreatedBy(Long, Pageable)
+     * @see org.gtg.tutorial.core.manager.PollManager#queryByCreatedBy(Long, Pageable)
      */
     @Override
     public Page<PollBO> queryByCreatedBy(Long userId, Pageable pageable) {

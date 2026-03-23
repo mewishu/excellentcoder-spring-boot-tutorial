@@ -2,11 +2,11 @@
  * Alipay.com Inc.
  * Copyright (c) 2004-2019 All Rights Reserved.
  */
-package org.excellentcoder.tutorial.core.model.poll;
+package org.gtg.tutorial.core.model.poll;
 
 import lombok.Getter;
 import lombok.Setter;
-import org.excellentcoder.tutorial.core.model.enums.RoleName;
+import org.gtg.tutorial.core.model.enums.RoleName;
 
 /**
  * @author xbyan

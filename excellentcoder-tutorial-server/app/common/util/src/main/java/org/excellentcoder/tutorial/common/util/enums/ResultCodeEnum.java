@@ -2,11 +2,11 @@
  * Alipay.com Inc.
  * Copyright (c) 2004-2019 All Rights Reserved.
  */
-package org.excellentcoder.tutorial.common.util.enums;
+package org.gtg.tutorial.common.util.enums;
 
 import lombok.Getter;
 import org.apache.commons.lang3.StringUtils;
-import org.excellentcoder.tutorial.common.util.ResultCode;
+import org.gtg.tutorial.common.util.ResultCode;
 
 /**
  * 结果码枚举

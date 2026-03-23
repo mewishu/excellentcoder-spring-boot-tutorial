@@ -2,11 +2,11 @@
  * Alipay.com Inc.
  * Copyright (c) 2004-2019 All Rights Reserved.
  */
-package org.excellentcoder.tutorial.web.home.result;
+package org.gtg.tutorial.web.home.result;
 
 import lombok.Data;
 import lombok.ToString;
-import org.excellentcoder.tutorial.common.service.facade.dto.result.TutorialResult;
+import org.gtg.tutorial.common.service.facade.dto.result.TutorialResult;
 
 /**
  * Web返回结果

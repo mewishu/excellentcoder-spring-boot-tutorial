@@ -36,7 +36,7 @@
         </javaTypeResolver>
 
         <!--生成Model类存放位置-->
-        <javaModelGenerator targetPackage="org.excellentcoder.tutorial.common.dal.dataobject" targetProject="src/main/java">
+        <javaModelGenerator targetPackage="org.gtg.tutorial.common.dal.dataobject" targetProject="src/main/java">
             <property name="enableSubPackages" value="true"/>
             <property name="trimStrings" value="true"/>
         </javaModelGenerator>
@@ -47,7 +47,7 @@
         </sqlMapGenerator>
 
         <!-- 生成mapxml对应client，也就是接口dao -->
-        <javaClientGenerator type="XMLMAPPER" targetPackage="org.excellentcoder.tutorial.common.dal.mapper.auto" targetProject="src/main/java">
+        <javaClientGenerator type="XMLMAPPER" targetPackage="org.gtg.tutorial.common.dal.mapper.auto" targetProject="src/main/java">
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
 

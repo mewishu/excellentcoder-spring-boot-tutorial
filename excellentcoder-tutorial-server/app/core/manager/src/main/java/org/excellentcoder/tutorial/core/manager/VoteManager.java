@@ -2,10 +2,10 @@
  * Alipay.com Inc.
  * Copyright (c) 2004-2019 All Rights Reserved.
  */
-package org.excellentcoder.tutorial.core.manager;
+package org.gtg.tutorial.core.manager;
 
-import org.excellentcoder.tutorial.common.dal.dataobject.ChoiceVoteCount;
-import org.excellentcoder.tutorial.core.model.poll.VoteBO;
+import org.gtg.tutorial.common.dal.dataobject.ChoiceVoteCount;
+import org.gtg.tutorial.core.model.poll.VoteBO;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 

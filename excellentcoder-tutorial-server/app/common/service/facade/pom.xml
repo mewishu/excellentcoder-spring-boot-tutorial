@@ -4,13 +4,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>tutorial</artifactId>
-        <groupId>org.excellentcoder</groupId>
+        <groupId>org.gtg</groupId>
         <version>1.0.0</version>
         <relativePath>../../../../pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.excellentcoder</groupId>
+    <groupId>org.gtg</groupId>
     <artifactId>tutorial-common-service-facade</artifactId>
     <version>1.0.0</version>
 

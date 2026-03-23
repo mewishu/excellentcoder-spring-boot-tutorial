@@ -2,7 +2,7 @@
  * Alipay.com Inc.
  * Copyright (c) 2004-2019 All Rights Reserved.
  */
-package org.excellentcoder.tutorial.common.util.logger;
+package org.gtg.tutorial.common.util.logger;
 
 import org.slf4j.Logger;
 import org.apache.commons.lang3.StringUtils;

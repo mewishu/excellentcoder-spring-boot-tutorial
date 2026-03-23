@@ -2,10 +2,10 @@
  * Alipay.com Inc.
  * Copyright (c) 2004-2019 All Rights Reserved.
  */
-package org.excellentcoder.tutorial.core.model.security;
+package org.gtg.tutorial.core.model.security;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import org.excellentcoder.tutorial.core.model.poll.UserBO;
+import org.gtg.tutorial.core.model.poll.UserBO;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;

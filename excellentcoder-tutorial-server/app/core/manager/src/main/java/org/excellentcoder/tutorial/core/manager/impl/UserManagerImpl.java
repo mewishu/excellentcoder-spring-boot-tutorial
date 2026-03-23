@@ -2,17 +2,17 @@
  * Alipay.com Inc.
  * Copyright (c) 2004-2019 All Rights Reserved.
  */
-package org.excellentcoder.tutorial.core.manager.impl;
+package org.gtg.tutorial.core.manager.impl;
 
-import org.excellentcoder.tutorial.common.dal.dataobject.RoleDO;
-import org.excellentcoder.tutorial.common.dal.dataobject.UserDO;
-import org.excellentcoder.tutorial.common.dal.dataobject.UserDOExample;
-import org.excellentcoder.tutorial.common.dal.dataobject.UserRolesLinkDO;
-import org.excellentcoder.tutorial.common.dal.mapper.auto.UserDOMapper;
-import org.excellentcoder.tutorial.common.dal.mapper.manual.ManualUserDOMapper;
-import org.excellentcoder.tutorial.core.manager.UserManager;
-import org.excellentcoder.tutorial.core.manager.convertor.UserConvertor;
-import org.excellentcoder.tutorial.core.model.poll.UserBO;
+import org.gtg.tutorial.common.dal.dataobject.RoleDO;
+import org.gtg.tutorial.common.dal.dataobject.UserDO;
+import org.gtg.tutorial.common.dal.dataobject.UserDOExample;
+import org.gtg.tutorial.common.dal.dataobject.UserRolesLinkDO;
+import org.gtg.tutorial.common.dal.mapper.auto.UserDOMapper;
+import org.gtg.tutorial.common.dal.mapper.manual.ManualUserDOMapper;
+import org.gtg.tutorial.core.manager.UserManager;
+import org.gtg.tutorial.core.manager.convertor.UserConvertor;
+import org.gtg.tutorial.core.model.poll.UserBO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.util.CollectionUtils;
@@ -37,7 +37,7 @@ public class UserManagerImpl implements UserManager {
     private ManualUserDOMapper manualUserDOMapper;
 
     /**
-     * @see org.excellentcoder.tutorial.core.manager.UserManager#queryById(Long)
+     * @see org.gtg.tutorial.core.manager.UserManager#queryById(Long)
      */
     @Override
     public UserBO insert(UserBO userBO) {
@@ -60,7 +60,7 @@ public class UserManagerImpl implements UserManager {
     }
 
     /**
-     * @see org.excellentcoder.tutorial.core.manager.UserManager#queryById(Long)
+     * @see org.gtg.tutorial.core.manager.UserManager#queryById(Long)
      */
     @Override
     public Optional<UserBO> queryById(Long id) {
@@ -69,7 +69,7 @@ public class UserManagerImpl implements UserManager {
     }
 
     /**
-     * @see org.excellentcoder.tutorial.core.manager.UserManager#queryByUsername(String)
+     * @see org.gtg.tutorial.core.manager.UserManager#queryByUsername(String)
      */
     @Override
     public Optional<UserBO> queryByUsername(String username) {
@@ -83,7 +83,7 @@ public class UserManagerImpl implements UserManager {
     }
 
     /**
-     * @see org.excellentcoder.tutorial.core.manager.UserManager#queryByUsernameOrEmail(java.lang.String, java.lang.String)
+     * @see org.gtg.tutorial.core.manager.UserManager#queryByUsernameOrEmail(java.lang.String, java.lang.String)
      */
     @Override
     public Optional<UserBO> queryByUsernameOrEmail(String username, String email) {
@@ -99,7 +99,7 @@ public class UserManagerImpl implements UserManager {
     }
 
     /**
-     * @see org.excellentcoder.tutorial.core.manager.UserManager#existsByUsername(java.lang.String)
+     * @see org.gtg.tutorial.core.manager.UserManager#existsByUsername(java.lang.String)
      */
     @Override
     public Boolean existsByUsername(String username) {

@@ -2,7 +2,7 @@
  * Alipay.com Inc.
  * Copyright (c) 2004-2022 All Rights Reserved.
  */
-package org.excellentcoder.tutorial.common.util;
+package org.gtg.tutorial.common.util;
 
 /**
  * 通用结果码接口，可以被枚举实现，返回结果码和结果描述

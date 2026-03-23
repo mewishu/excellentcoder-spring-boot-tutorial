@@ -1,4 +1,4 @@
-package org.excellentcoder.tutorial.common.dal.dataobject;
+package org.gtg.tutorial.common.dal.dataobject;
 
 import lombok.Data;
 

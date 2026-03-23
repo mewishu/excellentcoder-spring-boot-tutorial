@@ -8,7 +8,7 @@
 		<version>2.2.0.RELEASE</version>
 		<relativePath/> <!-- lookup parent from manager -->
 	</parent>
-	<groupId>org.excellentcoder</groupId>
+	<groupId>org.gtg</groupId>
 	<artifactId>tutorial</artifactId>
 	<version>1.0.0</version>
 	<packaging>pom</packaging>
@@ -41,57 +41,57 @@
 		<dependencies>
 			<!-- sub projects -->
 			<dependency>
-				<groupId>org.excellentcoder</groupId>
+				<groupId>org.gtg</groupId>
 				<artifactId>tutorial-common-dal</artifactId>
 				<version>1.0.0</version>
 			</dependency>
 			<dependency>
-				<groupId>org.excellentcoder</groupId>
+				<groupId>org.gtg</groupId>
 				<artifactId>tutorial-common-service-facade</artifactId>
 				<version>1.0.0</version>
 			</dependency>
 			<dependency>
-				<groupId>org.excellentcoder</groupId>
+				<groupId>org.gtg</groupId>
 				<artifactId>tutorial-common-service-integration</artifactId>
 				<version>1.0.0</version>
 			</dependency>
 			<dependency>
-				<groupId>org.excellentcoder</groupId>
+				<groupId>org.gtg</groupId>
 				<artifactId>tutorial-common-util</artifactId>
 				<version>1.0.0</version>
 			</dependency>
 			<dependency>
-				<groupId>org.excellentcoder</groupId>
+				<groupId>org.gtg</groupId>
 				<artifactId>tutorial-core-model</artifactId>
 				<version>1.0.0</version>
 			</dependency>
 			<dependency>
-				<groupId>org.excellentcoder</groupId>
+				<groupId>org.gtg</groupId>
 				<artifactId>tutorial-core-manager</artifactId>
 				<version>1.0.0</version>
 			</dependency>
 			<dependency>
-				<groupId>org.excellentcoder</groupId>
+				<groupId>org.gtg</groupId>
 				<artifactId>tutorial-core-service</artifactId>
 				<version>1.0.0</version>
 			</dependency>
 			<dependency>
-				<groupId>org.excellentcoder</groupId>
+				<groupId>org.gtg</groupId>
 				<artifactId>tutorial-biz-poll</artifactId>
 				<version>1.0.0</version>
 			</dependency>
 			<dependency>
-				<groupId>org.excellentcoder</groupId>
+				<groupId>org.gtg</groupId>
 				<artifactId>tutorial-web-home</artifactId>
 				<version>1.0.0</version>
 			</dependency>
 			<dependency>
-				<groupId>org.excellentcoder</groupId>
+				<groupId>org.gtg</groupId>
 				<artifactId>tutorial-web-polls</artifactId>
 				<version>1.0.0</version>
 			</dependency>
 			<dependency>
-				<groupId>org.excellentcoder</groupId>
+				<groupId>org.gtg</groupId>
 				<artifactId>tutorial-bootstrap</artifactId>
 				<version>1.0.0</version>
 			</dependency>

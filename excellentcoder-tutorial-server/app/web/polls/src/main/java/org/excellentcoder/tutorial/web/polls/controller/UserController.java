@@ -2,24 +2,24 @@
  * Alipay.com Inc.
  * Copyright (c) 2004-2019 All Rights Reserved.
  */
-package org.excellentcoder.tutorial.web.polls.controller;
+package org.gtg.tutorial.web.polls.controller;
 
-import org.excellentcoder.tutorial.biz.poll.service.PollService;
-import org.excellentcoder.tutorial.common.util.constants.PollConstants;
-import org.excellentcoder.tutorial.common.util.exception.ResourceNotFoundException;
-import org.excellentcoder.tutorial.core.manager.PollManager;
-import org.excellentcoder.tutorial.core.manager.UserManager;
-import org.excellentcoder.tutorial.core.manager.VoteManager;
-import org.excellentcoder.tutorial.core.model.poll.PollVotedBO;
-import org.excellentcoder.tutorial.core.model.poll.UserBO;
-import org.excellentcoder.tutorial.core.model.security.CurrentUser;
-import org.excellentcoder.tutorial.core.model.security.UserPrincipal;
-import org.excellentcoder.tutorial.web.home.result.WebPagedResult;
-import org.excellentcoder.tutorial.web.polls.convertor.PollVOConvertor;
-import org.excellentcoder.tutorial.web.polls.payload.PollResponseVO;
-import org.excellentcoder.tutorial.web.polls.payload.UserIdentityAvailability;
-import org.excellentcoder.tutorial.web.polls.payload.UserProfileResponseVO;
-import org.excellentcoder.tutorial.web.polls.payload.UserSummary;
+import org.gtg.tutorial.biz.poll.service.PollService;
+import org.gtg.tutorial.common.util.constants.PollConstants;
+import org.gtg.tutorial.common.util.exception.ResourceNotFoundException;
+import org.gtg.tutorial.core.manager.PollManager;
+import org.gtg.tutorial.core.manager.UserManager;
+import org.gtg.tutorial.core.manager.VoteManager;
+import org.gtg.tutorial.core.model.poll.PollVotedBO;
+import org.gtg.tutorial.core.model.poll.UserBO;
+import org.gtg.tutorial.core.model.security.CurrentUser;
+import org.gtg.tutorial.core.model.security.UserPrincipal;
+import org.gtg.tutorial.web.home.result.WebPagedResult;
+import org.gtg.tutorial.web.polls.convertor.PollVOConvertor;
+import org.gtg.tutorial.web.polls.payload.PollResponseVO;
+import org.gtg.tutorial.web.polls.payload.UserIdentityAvailability;
+import org.gtg.tutorial.web.polls.payload.UserProfileResponseVO;
+import org.gtg.tutorial.web.polls.payload.UserSummary;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
